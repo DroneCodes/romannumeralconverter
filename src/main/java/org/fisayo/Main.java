@@ -1,17 +1,26 @@
 package org.fisayo;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Optional demo class to showcase library usage.
+ * This is not required for the library to function.
+ */
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Demonstrate converting to Roman numerals
+        System.out.println("Converting numbers to Roman numerals:");
+        int[] numbers = {4, 9, 49, 99, 500, 2023};
+        for (int num : numbers) {
+            String romanNumeral = RomanNumeralConverter.toRoman(num);
+            System.out.println(num + " → " + romanNumeral);
+        }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // Demonstrate converting from Roman numerals
+        System.out.println("\nConverting Roman numerals to numbers:");
+        String[] romanNumerals = {"IV", "IX", "XLIX", "XCIX", "D", "MMXXIII"};
+        for (String roman : romanNumerals) {
+            int arabicNumber = RomanNumeralConverter.toArabic(roman);
+            System.out.println(roman + " → " + arabicNumber);
         }
     }
 }
