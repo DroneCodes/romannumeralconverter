@@ -9,7 +9,7 @@ Roman Numeral Converter is a lightweight Java library that provides simple and e
 ### 1. Manual JAR Installation
 
 #### Download Options:
-- Download the latest JAR from the [GitHub Releases page](https://github.com/dronecodes/romannumeralconverter/releases)
+- Download the latest JAR from the [GitHub Releases page](https://github.com/dronecodes/romannumeralconverter/releases) (In Progress)
 - Clone the repository and build the project locally
 
 #### Adding to Your Project
@@ -39,7 +39,7 @@ dependencies {
 
 ```bash
 # Clone the repository
-git clone https://github.com/dronecodes/romannumeralconverter.git
+git clone https://github.com/DroneCodes/romannumeralconverter.git
 
 # Navigate to the project directory
 cd romannumeralconverter
